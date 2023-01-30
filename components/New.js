@@ -45,15 +45,15 @@ export default function New({}) {
     getnewAudio();
   }, []);
   return (
-    <div className="bg-bgcolor py-8 font-roboto px-10">
+    <div className="bg-bgcolor dark:bg-bgdark py-8 font-roboto px-10">
       <h1 className="text-2xl mb-8">New Releases</h1>
       <div>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 md:gap-10 lg:grid-cols-5 lg:gap:10">
           {isLoding && <h1>Loading</h1>}
           {newAudio.map((data) => (
             <div
               key={data.imgurl}
-              className="  flex flex-col justify-center items-center rounded-md transition hover:bg-white hover:-translate-y-2 hover:cursor-pointer"
+              className="  flex flex-col justify-center items-center rounded-md transition  dark:hover:bg-dkcolor hover:bg-white hover:-translate-y-2 hover:cursor-pointer"
               onClick={(e) => changePlayer(data)}
             >
               <div className=" w-48 h-48 ">

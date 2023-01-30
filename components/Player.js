@@ -21,7 +21,7 @@ export default function Player({}) {
           <AudioPlayer
             src={nowPlaying.link}
             onPlay={(e) => console.log("onPlay")}
-            // other props here
+            className="dark:bg-black"
           />
         </div>
       )}{" "}

@@ -5,8 +5,8 @@ export default function NavBar({}) {
   const { seraching, setSearching } = useContext(SearchContext);
 
   return (
-    <nav className=" h-14 bg-bgcolor w-[100%] flex items-center justify-between px-10">
-      <Icon.Activity size={25} className=" stroke-black" />
+    <nav className="bg-bgcolor dark:bg-bgdark h-14 w-[100%] flex items-center justify-between px-10">
+      <Icon.Activity size={25} className=" stroke-black dark:stroke-white" />
 
       <input
         className=" w-52 h-6 rounded-md p-4 focus:outline-none"
