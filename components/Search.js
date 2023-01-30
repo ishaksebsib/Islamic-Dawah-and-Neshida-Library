@@ -117,7 +117,7 @@ export default function Search({}) {
         <div className="bg-bgcolor dark:bg-bgdark py-8 font-roboto px-10">
           <div>
             <h1 className="flex items-center justify-center">{isLoading}</h1>
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-3 md:gap-10 lg:grid-cols-5 lg:gap:10">
+            <div className="grid grid-cols-2 gap-6 mobile md:grid-cols-3 md:gap-10 lg:grid-cols-5 lg:gap:10">
               {result.map((data) => (
                 <div
                   key={data.imgurl}

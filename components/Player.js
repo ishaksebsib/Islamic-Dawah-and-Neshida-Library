@@ -19,6 +19,7 @@ export default function Player({}) {
           </div>
 
           <AudioPlayer
+            autoPlay
             src={nowPlaying.link}
             onPlay={(e) => console.log("onPlay")}
             className="dark:bg-black"

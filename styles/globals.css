@@ -8,7 +8,6 @@
 
 @media (max-width: 420px) {
   .mobile {
-    background: red;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
