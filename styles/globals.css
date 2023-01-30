@@ -5,3 +5,10 @@
 .light body {
   background: #f5f5f7;
 }
+
+@media (max-width: 420px) {
+  .mobile {
+    background: red;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

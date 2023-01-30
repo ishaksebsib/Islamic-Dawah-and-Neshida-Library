@@ -39,7 +39,7 @@ export default function Recomended({}) {
       <h1 className="text-2xl mb-8">Recomended</h1>
 
       <div>
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 md:gap-10 lg:grid-cols-5 lg:gap:10">
+        <div className="grid grid-cols-2 gap-6 mobile md:grid-cols-3 md:gap-10 lg:grid-cols-5 lg:gap:10">
           {isLoding && <h1>Loading</h1>}
           {recomended.map((data) => (
             <div
