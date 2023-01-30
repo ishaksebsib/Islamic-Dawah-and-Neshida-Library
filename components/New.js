@@ -28,7 +28,6 @@ export default function New({}) {
   const getnewAudio = async () => {
     const q = query(
       collection(db, "audiostore"),
-      where("rating", "==", 5),
       orderBy("createdAt"),
       limit(14)
     );

@@ -41,6 +41,7 @@ export default function Search({}) {
   // search fucntionality
 
   const getSearch = async () => {
+    setResult([]);
     let pick = "tag";
     let find = seraching;
     let method = "array-contains";
