@@ -1,4 +1,6 @@
 import { SearchContext } from "@/lib/context";
+import { PlayerContext } from "@/lib/context";
+
 import { db } from "@/lib/firebase";
 import { collection, getDocs, limit, query, where } from "firebase/firestore";
 import { useTheme } from "next-themes";
@@ -11,6 +13,12 @@ export default function Search({}) {
   const [isLoading, setIsLoading] = useState("");
   const [result, setResult] = useState([]);
   const { seraching, setSearching } = useContext(SearchContext);
+
+  /// play
+  const { nowPlaying, setNowPlaying } = useContext(PlayerContext);
+  const changePlayer = (data) => {
+    setNowPlaying(data);
+  };
 
   // dark mode fuctionality
 
